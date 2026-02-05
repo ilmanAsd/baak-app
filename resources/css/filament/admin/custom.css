@@ -1,0 +1,111 @@
+/* Modern & Elegant Admin UI Enhancements */
+
+:root {
+    --sidebar-bg: #1e293b;
+    /* Slate 800 */
+    --sidebar-item-hover: rgba(255, 255, 255, 0.05);
+    --sidebar-item-active: rgba(99, 102, 241, 0.1);
+    /* Indigo active bg */
+}
+
+/* Sidebar Styling */
+.fi-sidebar {
+    background-color: var(--sidebar-bg) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.fi-sidebar-header {
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.fi-sidebar-nav-label {
+    color: #94a3b8 !important;
+    /* Slate 400 */
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.fi-sidebar-item-button {
+    border-radius: 0.75rem !important;
+    margin: 0.125rem 0.5rem !important;
+    transition: all 0.2s ease !important;
+    color: #cbd5e1 !important;
+    /* Slate 300 */
+}
+
+.fi-sidebar-item-button:hover {
+    background-color: var(--sidebar-item-hover) !important;
+    color: #fff !important;
+    transform: translateX(4px);
+}
+
+.fi-sidebar-item-active .fi-sidebar-item-button {
+    background-color: var(--sidebar-item-active) !important;
+    color: rgb(165, 180, 252) !important;
+    /* Indigo 300 */
+    font-weight: 600;
+}
+
+.fi-sidebar-item-active .fi-sidebar-item-button svg {
+    color: rgb(165, 180, 252) !important;
+}
+
+/* Group Headers */
+.fi-sidebar-group {
+    margin-bottom: 1rem;
+}
+
+/* Main Content Area */
+.fi-main {
+    background-color: #f8fafc;
+    /* Slate 50 */
+}
+
+.fi-topbar {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Cards & Sections */
+.fi-section {
+    border-radius: 1rem !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+    border: none !important;
+    transition: transform 0.2s ease;
+}
+
+.fi-section:hover {
+    transform: translateY(-2px);
+}
+
+/* Buttons */
+.fi-btn {
+    border-radius: 0.75rem !important;
+    font-weight: 600 !important;
+}
+
+/* Forms */
+.fi-fo-text-input,
+.fi-fo-select,
+.fi-fo-textarea {
+    border-radius: 0.75rem !important;
+    border-color: #e2e8f0 !important;
+}
+
+.fi-fo-text-input:focus,
+.fi-fo-select:focus {
+    border-color: rgb(99, 102, 241) !important;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2) !important;
+}
+
+/* Transitions */
+.fi-sidebar-nav {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
